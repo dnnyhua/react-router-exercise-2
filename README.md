@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+
+## COMMENT AND UNCOMMENT App and App2 in Index
+This is so that we can check out one app at a time. App.js is the dog list exercise and App2.js is the add color exercise.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
