@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import './Nav.css'
 
 const Nav = ({ dogs }) => {
     const links = dogs.map(dog => (
@@ -9,11 +10,11 @@ const Nav = ({ dogs }) => {
 
 
     return (
-        <div>
-            <ul>
+        <div className="NavBar">
+            <nav>
                 <li><Link key='home' to="/dogs">Home</Link></li>
                 {links}
-            </ul>
+            </nav>
         </div>
     )
 }

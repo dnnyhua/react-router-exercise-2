@@ -1,6 +1,6 @@
-
-
 import { useParams, Navigate, Link } from "react-router-dom";
+import './DogProfilePage.css'
+
 
 const DogProfilePage = ({ dogs }) => {
     const { name } = useParams();
@@ -15,18 +15,21 @@ const DogProfilePage = ({ dogs }) => {
         }
         return (
             <div>
-                <div>
+                <div className="DogProfilePage-Details">
                     <h1>{dog.name}</h1>
                     <img src={dog.src} alt={dog.name} />
                     <p>Age: {dog.age} years old</p>
-                    <ul>
-                        {dog.facts.map((f, i) => (
-                            <li key={i}>{f}</li>
-                        ))}
-                    </ul>
+                    <div className="DogProfilePage-FactsContainer">
+                        <ul>
+                            {dog.facts.map((f, i) => (
+                                <li key={i}>{f}</li>
+                            ))}
+                        </ul>
+                    </div>
+                    <Link to='/dogs'>Go Back</Link>
                 </div>
 
-                <Link to='/dogs'>Go Back</Link>
+
             </div>
 
         )

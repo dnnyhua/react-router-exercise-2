@@ -1,0 +1,11 @@
+.DogProfilePage-Details {
+    display: block;
+    text-align: center;
+}
+
+.DogProfilePage-FactsContainer {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+
+}
